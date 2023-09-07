@@ -42,9 +42,9 @@ label {
 
 input {
     border-bottom: 2px solid #290A00;
-    padding: 10px;
+    padding: 5px;
     font-size: .8rem;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     background-color: #FFF0EB;
 }
 
@@ -55,6 +55,7 @@ input:focus {
 input[type="submit"] {
     background-color: #FF3F00;
     color: #FFF0EB;
+    font-size: .8rem;
     border: none;
     border-radius: 10px;
     height: 40px;
@@ -71,12 +72,12 @@ input[type="submit"]:hover {
     margin-right: auto;
     background-color: #FFF0EB;
     border-radius: 10px;
-    padding: 20px;
+    padding: 10px;
 }
 
 #main-container h2 {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 #agreement {
@@ -100,4 +101,15 @@ input[type="submit"]:hover {
 
 .spacing {
     margin-right: 2.5%;
+}
+
+.error-validation {
+    color: #FF7547;
+    position: absolute;
+    top: 45px;
+    font-size: 11px;
+}
+
+.template {
+    display: none;
 }

@@ -12,36 +12,43 @@
     <article>
         <div id="main-container">
             <h2>Sign up</h2>
-            <form>
+            <form id="register-form" action="">
                 <div class="full-box">
                     <label for="email">E-mail</label>
-                    <input type="email" name="email" placeholder="Enter your e-mail">
+                    <input type="email" name="email" id="email" placeholder="Enter your e-mail"
+                        data-min-length="2" data-email-validate>
                 </div>
                 <div class="half-box spacing">
                     <label for="name">Name</label>
-                    <input type="text" name="name" placeholder="Enter your name">
+                    <input type="text" name="name" id="name" placeholder="Enter your name"
+                        data-required data-min-length="3" data-max-length="16">
                 </div>
                 <div class="half-box">
                     <label for="lastname">Lastname</label>
-                    <input type="text" name="lastname" placeholder="Enter your lastname">
+                    <input type="text" name="lastname" id="lastname" placeholder="Enter your lastname"
+                        data-required data-only-letters>
                 </div>
                 <div class="half-box spacing">
                     <label for="password">Password</label>
-                    <input type="password" name="password" placeholder="Enter your password">
+                    <input type="password" name="password" id="password" placeholder="Enter your password"
+                        data-password-validate data-required>
                 </div>
                 <div class="half-box">
                     <label for="confirm">Confirm your password</label>
-                    <input type="password" name="confirm" placeholder="Re-enter your password">
+                    <input type="password" name="confirm" id="confirm" placeholder="Re-enter your password"
+                        data-equal="password">
                 </div>
                 <div>
                     <input type="checkbox" name="agreement" id="agreement">
                     <label for="agreement" id="agreement-label">I have read and accept <a href="#">the terms of use</a></label>
                 </div>
                 <div class="full-box">
-                    <input type="submit" value="Register">
+                    <input type="submit" value="Register" id="btn-submit">
                 </div>
             </form>
         </div>
+        <p class="error-validation template"></p>
+        <script src="js/validation.js"></script>
     </article>
 
     <aside></aside>
